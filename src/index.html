@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <title>CodePen - Skills page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
-    <!-- <link rel="stylesheet" href="./style1.css "> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="./employee.css ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
 </head>
 
 <body>
+
+
     <div class="container-1">
         <h2>Meet the Crew</h2>
         <p>Meet our team of Digital warriors,
@@ -31,10 +32,10 @@
             <div class=" col-lg-6 col-md-12 no-pad team-1">
                 <div class="comb-1 ">
                     <div class="member">
-                        <img class="zoom-dark" src="/dist/assest/Vasanth-Govind.jpeg">
+                        <img class="zoom-dark" src="/dist/assest/IMAGE-17.jpeg">
                     </div>
                     <div class="member">
-                        <img id="myImg" src="/dist/assest/hover.jpg" alt="Trolltunga, Norway" width="105" height="130">
+                        <img class="zoom-dark" src="/dist/assest/IMAGE-18.jpeg">
                     </div>
                     <div class="vl">
                         <Span class="dots"></Span>
@@ -127,9 +128,17 @@
                 <div class="comb-4">
                     <div class="member">
                         <img class="zoom-dark" src="/dist/assest/Jasintha-1.jpeg">
+                        <div class="modal-description">
+                            <h1>Jasintha</h1>
+                            <h3>HR</h3>
+                        </div>
                     </div>
                     <div class="member">
                         <img class="zoom-dark" src="/dist/assest/SHAVETA.jpeg">
+                        <div class="modal-description">
+                            <h1>Shavetha</h1>
+                            <h3>Project Manager</h3>
+                        </div>
                     </div>
                     <div class="vl-22">
                         <Span class="dots"></Span>
@@ -153,11 +162,6 @@
                             </div>
                             <div class="circ">
                                 <div class="vl-1">
-                                    <Span class="dots"></Span>
-                                </div>
-                            </div>
-                            <div class="semi-circle">
-                                <div class="vl-2">
                                     <Span class="dots"></Span>
                                 </div>
                             </div>
@@ -305,6 +309,12 @@
                     <div class="vl-49">
                         <Span class="dots"></Span>
                     </div>
+                    <!-- <div class="vl-50">
+                        <Span class="dots"></Span>
+                    </div>
+                    <div class="vl-51">
+                        <Span class="dots"></Span>
+                    </div> -->
                 </div>
                 <div class="comb-9">
                     <div class="circle-2">
@@ -316,46 +326,47 @@
                                 <Span class="dots"></Span>
                             </div>
                         </div>
-                        <div class="semi-circle">
-                            <div class="vl-2">
-                                <Span class="dots"></Span>
-                            </div>
-                        </div>
                     </div>
                 </div>
+
             </div>
-
         </div>
-    </div>
 
 
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
+        <script>
+            let modal = document.getElementById('myModal');
+            document.addEventListener('click', function (e) {
+                let target = e.target;
+                let src = target.getAttribute("src");
+                let modalImg = modal.getElementsByTagName('img')[0];
+                let modalName = modal.getElementsByTagName('h1')[0];
+                let modalDesc = modal.getElementsByTagName('h3')[0];
+                if (src) {
+                    modalImg.src = src;
+                    modal.style.display = "block";
+                    let imgData = target.nextElementSibling;
+                    if (imgData) {
+                        let imgName = imgData.getElementsByTagName('h1')[0];
+                        let imgDes = imgData.getElementsByTagName('h3')[0];
+                        modalName.innerText = imgName.textContent;
+                        modalDesc.innerText = imgDes.textContent;
+                    } else {
+                        modalName.innerText = "";
+                        modalDesc.innerText = "";
+                    }
+                }
+            }, false);
 
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            modalImg.alt = this.alt;
-            captionText.innerHTML = this.alt;
-        }
-
-
-        // When the user clicks on <span> (x), close the modal
-        modal.onclick = function () {
-            img01.className += " out";
-            setTimeout(function () {
-                modal.style.display = "none";
-                img01.className = "modal-content";
-            }, 400);
-        }
-    </script>
-
+            // When the user clicks on <span> (x), close the modal
+            modal.onclick = function () {
+                img01.className += " out";
+                setTimeout(function () {
+                    modal.style.display = "none";
+                    img01.className = "modal-content";
+                }, 400);
+            }
+        </script>
 
 
 </body>
