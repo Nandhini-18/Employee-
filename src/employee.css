@@ -1,3 +1,11 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.004);
+    -moz-osx-font-smoothing: grayscale;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 .container-1 {
     text-align: center;
@@ -20,10 +28,8 @@ p {
     margin: 0;
 }
 
-@media only screen and (max-width: 800px) {
-    p {
-        margin-bottom: 100px;
-    }
+.modal-description {
+    display: none;
 }
 
 .container-2 {
@@ -34,13 +40,7 @@ p {
     display: flex;
     margin-top: 100px;
     justify-content: center;
-}
-
-@media only screen and (max-width: 800px) {
-    .people {
-        display: unset;
-        margin-top: 100px;
-    }
+    margin-bottom: 50px;
 }
 
 img {
@@ -52,26 +52,10 @@ img {
     justify-content: center;
 }
 
-@media only screen and (max-width: 800px) {
-    .team-1, .team-2 {
-        display: flex;
-        justify-content: center;
-    }
-}
-
 .member {
     width: 95px;
     height: 90px;
     clip-path: polygon(0% 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0%, 25% 0%);
-}
-
-@media only screen and (max-width: 1000px) {
-    .member {
-        width: 80px;
-        height: 75px;
-        clip-path: polygon(0% 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0%, 25% 0%);
-        /* animation: ani01 5s linear infinite; */
-    }
 }
 
 .member::before {
@@ -122,6 +106,14 @@ img {
     100% {
         transform: scale(1.1);
     }
+}
+
+.member.loop-image-1 {
+    margin-top: 12px;
+}
+
+.member.loop-image-2 {
+    margin-top: 25px;
 }
 
 .comb-1 .member:nth-child(2) {
@@ -638,7 +630,7 @@ img {
 }
 
 .comb-8 .inter-1 .member:nth-child(3) {
-    margin-top: 5px;
+    margin-top: 0px;
     margin-left: 17px;
     animation-name: stretch;
     animation-duration: 2s;
@@ -725,11 +717,6 @@ img {
     }
 }
 
-/* .comb-8 .inter-2 .member:nth-child(3) {
-    margin-top : 10px;
-    margin-left: 18px;
-} */
-
 .inter-3 {
     justify-content: center;
 }
@@ -766,7 +753,7 @@ img {
 }
 
 .vl {
-    margin-top: -164px;
+    margin-top: 42px;
     transform: rotate(27deg);
     border-right: 3px solid #410883;
     height: 64px;
@@ -1218,7 +1205,7 @@ img {
 }
 
 .vl-34 {
-    margin-top: -186px;
+    margin-top: -182px;
     transform: rotate(270deg);
     border-right: 3px solid #410883;
     height: 65px;
@@ -1345,10 +1332,10 @@ img {
 
 .vl-43 {
     margin-top: -35px;
-    transform: rotate(209deg);
+    transform: rotate( 209deg);
     border-right: 3px solid #410883;
-    height: 62px;
-    margin-left: 214px;
+    height: 52px;
+    margin-left: 212px;
     width: 10px;
     -webkit-animation: increase 3s;
     -moz-animation: increase 3s;
@@ -1373,20 +1360,15 @@ img {
 
 .vl-45 {
     margin-top: -37px;
-    transform: rotate(89deg);
+    transform: rotate( 89deg);
     border-right: 3px solid #410883;
-    height: 64px;
+    height: 67px;
     margin-left: 259px;
     width: 10px;
-    -webkit-animation: increase 3s;
-    -moz-animation: increase 3s;
-    -o-animation: increase 3s;
-    animation: increase 3s;
-    animation-fill-mode: forwards;
 }
 
 .vl-46 {
-    margin-top: -37px;
+    margin-top: -31px;
     transform: rotate(29deg);
     border-right: 3px solid #410883;
     height: 55px;
@@ -1428,6 +1410,34 @@ img {
 }
 
 .vl-49 {
+    margin-top: -35px;
+    transform: rotate(28deg);
+    border-right: 3px solid #410883;
+    height: 54px;
+    margin-left: 214px;
+    width: 10px;
+    -webkit-animation: increase 3s;
+    -moz-animation: increase 3s;
+    -o-animation: increase 3s;
+    animation: increase 3s;
+    animation-fill-mode: forwards;
+}
+
+.vl-50 {
+    margin-top: -256px;
+    transform: rotate( 91deg);
+    border-right: 3px solid #410883;
+    height: 94px;
+    margin-left: 154px;
+    width: 10px;
+    -webkit-animation: increase 3s;
+    -moz-animation: increase 3s;
+    -o-animation: increase 3s;
+    animation: increase 3s;
+    animation-fill-mode: forwards;
+}
+
+.vl-51 {
     margin-top: -35px;
     transform: rotate(28deg);
     border-right: 3px solid #410883;
@@ -1749,7 +1759,7 @@ img {
 }
 
 .vl-43 span.dots {
-    top: 59px;
+    top: 49px;
     left: -2px;
     width: 7px;
     height: 7px;
@@ -1763,8 +1773,8 @@ img {
 }
 
 .vl-45 span.dots {
-    top: 63px;
-    left: -2px;
+    top: 66px;
+    left: 3px;
     width: 7px;
     height: 7px;
 }
@@ -1778,7 +1788,7 @@ img {
 
 .vl-47 span.dots {
     top: 54px;
-    left: -104px;
+    left: -114px;
     width: 7px;
     height: 7px;
 }
@@ -1805,21 +1815,15 @@ img {
 }
 
 .circle {
-    margin-top: 58px;
+    margin-top: 8px;
     margin-left: -16px;
 }
 
-@media only screen and (max-width: 800px) {
-    .circle {
-        margin-top: 88px;
-        margin-left: -48px;
-    }
+.circle-2 {
+    margin-top: -139px;
+    margin-left: -1px;
 }
 
-.circle-2 {
-    margin-top: 55px;
-    margin-left: -48px;
-}
 
 .line-1 {
     height: 120px;
@@ -1829,7 +1833,9 @@ img {
     margin: auto;
     animation: ani01 5s linear infinite;
 }
-
+.line-2{
+    margin-top: -138px;
+}
 @keyframes ani01 {
     0% {
         transform: rotate(0deg);
@@ -1847,20 +1853,6 @@ img {
     border-right: 4px solid #00ffff;
 }
 
-.semi-circle {
-    background-color: transparent;
-    width: 170px;
-    height: 303px;
-    border-right: 3px solid transparent;
-    border-bottom: 5px solid #1f0292;
-    border-left: 3px solid transparent;
-    border-top: 8px solid transparent;
-    border-radius: 100px;
-    transform: rotate(276deg);
-    margin-top: -240px;
-    margin-left: -87px;
-}
-
 .circ {
     border-radius: 50%;
     width: 149px;
@@ -1872,7 +1864,7 @@ img {
     border-right: 9px solid #470fec;
     border-bottom: 9px solid #470fec;
     transform: rotate(313deg);
-    margin-top: -150px;
+    margin-top: 40px;
     margin-left: -16px;
     animation: spin 8s linear infinite;
     -webkit-animation: spin 8s linear infinite;
@@ -1898,22 +1890,6 @@ img {
     }
 }
 
-.vl-2 {
-    transform: rotate(353deg);
-    border-right: 2px solid #8887d8;
-    height: 38px;
-    margin-top: 294px;
-    margin-left: 90px;
-    width: 1px;
-}
-
-.vl-2 span.dots {
-    top: 37px;
-    left: -2px;
-    width: 7px;
-    height: 7px;
-}
-
 .member-1, .member:hover {
     transform: scale(1.1);
     background-clip: #ff800a;
@@ -1932,28 +1908,17 @@ img {
 
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 50px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
 }
-
-/* Modal Content (image) */
 
 .modal-content {
     margin: auto;
@@ -1961,8 +1926,6 @@ img {
     width: 30%;
     max-width: 75%;
 }
-
-/* Caption of Modal Image */
 
 #caption {
     margin: auto;
@@ -1974,8 +1937,6 @@ img {
     padding: 10px 0;
     height: 150px;
 }
-
-/* Add Animation */
 
 .modal-content, #caption {
     -webkit-animation-name: zoom;
@@ -2016,8 +1977,6 @@ img {
     }
 }
 
-/* The Close Button */
-
 .close {
     position: absolute;
     top: 15px;
@@ -2034,31 +1993,58 @@ img {
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s linear;
 }
 
-h1 {
-    padding-top: 15px;
-    color: white;
-    text-align: center;
-    font-size: 28px;
-    margin: 0;
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-h3 {
-    padding-top: 15px;
-    color: white;
+.prev:hover, .next:hover {
+    background-color: rgba(192, 191, 191, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.footer {
     text-align: center;
-    font-size: 28px;
-    margin: 0;
 }
 
 @media only screen and (max-width: 1000px) {
+    .member {
+        width: 80px;
+        height: 75px;
+        clip-path: polygon(0% 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0%, 25% 0%);
+    }
     .comb-1 .member:nth-child(2) {
         margin-top: 25px;
         margin-left: -5px;
@@ -2091,7 +2077,7 @@ h3 {
         margin-left: -8px;
     }
     .vl {
-        margin-top: -144px;
+        margin-top: 30px;
         height: 55px;
         margin-left: 82px;
         width: 10px;
@@ -2239,218 +2225,767 @@ h3 {
         margin-left: 58px;
     }
     .vl-26 {
-        margin-top: 18px;
-        height: 76px;
-        margin-left: 115px;
+        margin-top: 29px;
+        height: 56px;
+        margin-left: 105px;
     }
     .vl-26 span.dots {
-        top: 74px;
+        top: 53px;
         left: -2px;
         width: 7px;
         height: 7px;
     }
     .vl-27 {
+        margin-top: -193px;
+        height: 74px;
+        margin-left: 7px;
+    }
+    .vl-27 span.dots {
+        top: 70px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-28 {
+        margin-top: -98px;
+        height: 55px;
+        margin-left: 50px;
+    }
+    .vl-28 span.dots {
+        top: 48px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-29 {
+        margin-top: -34px;
+        height: 57px;
+        margin-left: 85px;
+    }
+    .vl-30 {
         margin-top: -19px;
         height: 54px;
         margin-left: 38px;
     }
-    .vl-27 span.dots {
+    .vl-30 span.dots {
         top: 52px;
         left: -2px;
         width: 7px;
         height: 7px;
     }
-    .vl-27 span.dots:nth-child(2) {
+    .vl-30 span.dots:nth-child(2) {
         margin-top: -54px;
         margin-left: 1px;
         width: 7px;
         height: 7px;
     }
-    .vl-28 {
+    .vl-31 {
         margin-top: -70px;
         height: 43px;
         margin-left: 78px;
     }
-    .vl-28 span.dots {
+    .vl-31 span.dots {
         top: 40px;
         left: -3px;
         width: 7px;
         height: 7px;
     }
-    .vl-29 {
+    .vl-32 {
         margin-top: -48px;
         margin-left: 0px;
         height: 50px;
     }
-    .vl-29 span.dots {
+    .vl-32 span.dots {
         top: 48px;
         left: -3px;
         width: 7px;
         height: 7px;
     }
-    .vl-30 {
+    .vl-33 {
         margin-top: -99px;
         margin-left: 1px;
         height: 51px;
     }
-    .vl-30 span.dots {
+    .vl-33 span.dots {
         top: 49px;
         left: -2px;
         width: 7px;
         height: 7px;
     }
-    .vl-31 {
-        margin-top: -148px;
+    .vl-34 {
+        margin-top: -153px;
         height: 55px;
         margin-left: 41px;
     }
-    .vl-31 span.dots {
+    .vl-34 span.dots {
         top: 52px;
         left: -2px;
         width: 7px;
         height: 7px;
     }
-    .vl-32 {
+    .vl-35 {
         margin-top: -32px;
         height: 53px;
         margin-left: 79px;
     }
-    .vl-33 {
+    .vl-36 {
         margin-top: -8px;
         height: 59px;
         margin-left: 77px;
     }
-    .vl-34 {
+    .vl-37 {
         margin-top: -32px;
         height: 52px;
         margin-left: 42px;
     }
-    .vl-35 {
+    .vl-38 {
         margin-top: -31px;
         transform: rotate(145deg);
         height: 57px;
         margin-left: 81px;
     }
-    .vl-36 {
+    .vl-39 {
         margin-top: -200px;
         height: 57px;
         margin-left: 81px;
     }
-    .vl-37 {
+    .vl-40 {
         margin-top: -96px;
         height: 44px;
         margin-left: 84px;
     }
-    .vl-37 span.dots {
+    .vl-40 span.dots {
         top: 41px;
         left: -2px;
         width: 7px;
         height: 7px;
     }
-    .vl-38 {
+    .vl-41 {
         margin-top: -70px;
         height: 58px;
         margin-left: 46px;
     }
-    .vl-38 span.dots {
+    .vl-41 span.dots {
         top: 56px;
         left: -2px;
         width: 7px;
         height: 7px;
     }
-    .vl-39 {
+    .vl-42 {
         margin-top: -59px;
         margin-left: 219px;
     }
-    .vl-40 {
+    .vl-43 {
         margin-top: -35px;
         height: 53px;
         margin-left: 175px;
     }
-    .vl-40 span.dots {
+    .vl-43 span.dots {
         top: 50px;
         left: -2px;
         width: 7px;
         height: 7px;
     }
-    .vl-41 {
+    .vl-44 {
         margin-top: -4px;
         height: 52px;
         margin-left: 176px;
     }
-    .vl-41 span.dots {
+    .vl-44 span.dots {
         top: 51px;
         left: -4px;
-        width: 7px;
-        height: 7px;
-    }
-    .vl-42 {
-        margin-top: -33px;
-        height: 64px;
-        margin-left: 224px;
-    }
-    .vl-43 {
-        margin-top: -37px;
-        height: 46px;
-        margin-left: 179px;
-    }
-    .vl-43 span.dots {
-        top: 42px;
-        left: -2px;
-        width: 7px;
-        height: 7px;
-    }
-    .vl-44 {
-        margin-top: -7px;
-        height: 54px;
-        margin-left: 181px;
-    }
-    .vl-44 span.dots {
-        top: 44px;
-        left: -96px;
         width: 7px;
         height: 7px;
     }
     .vl-45 {
         margin-top: -33px;
         height: 64px;
-        margin-left: 229px;
+        margin-left: 224px;
     }
     .vl-46 {
+        margin-top: -37px;
+        height: 46px;
+        margin-left: 179px;
+    }
+    .vl-46 span.dots {
+        top: 42px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-47 {
+        margin-top: -7px;
+        height: 54px;
+        margin-left: 181px;
+    }
+    .vl-47 span.dots {
+        top: 44px;
+        left: -96px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-48 {
+        margin-top: -33px;
+        height: 64px;
+        margin-left: 229px;
+    }
+    .vl-49 {
         margin-top: -35px;
         height: 48px;
         margin-left: 183px;
     }
-    .vl-46 span.dots {
+    .vl-49 span.dots {
         top: 46px;
         left: -2px;
         width: 7px;
         height: 7px;
     }
-    @media only screen and (max-width: 1000px) {
-        .circle-2 {
-            margin-top: 82px;
-            margin-left: -67px;
-        }
-        .circle {
-            margin-top: 80px;
-            margin-left: -48px;
-        }
-        .vl-2 {
-            display: none;
-        }
-        @media only screen and (max-width: 762px) {
-            .circle-2 {
-                margin-top: 82px;
-                margin-left: -67px;
-            }
-            .circle {
-                margin-top: 80px;
-                margin-left: -48px;
-            }
-            .vl-2 {
-                display: block;
-            }
-        }
+    .circle-2 {
+        margin-top: 24px;
+        margin-left: -99px;
+    }
+    .circle {
+        margin-top: 45px;
+        margin-left: -20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    p {
+        margin-bottom: 100px;
+    }
+    .people {
+        display: unset;
+        margin-top: 100px;
+    }
+    .team-1, .team-2 {
+        display: flex;
+        justify-content: center;
+    }
+    .circle-image {
+        height: 108px;
+        width: 108px;
+    }
+    .circ {
+        width: 139px;
+        height: 139px;
+        margin-top: -150px;
+        margin-left: -16px;
+    }
+    .circle-2 {
+        margin-top: 50px;
+        margin-left: -18px;
+    }
+    .circle {
+        margin-top: 88px;
+        margin-left: -48px;
+    }
+    .team-2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 106px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    p {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .modal-content {
+        width: 100%;
+    }
+}
+
+h1 {
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+}
+
+h3 {
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    p {
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .member {
+        width: 60px;
+        height: 55px;
+    }
+    .comb-1 .member:nth-child(1) {
+        margin-left: 8px;
+    }
+    .comb-1 .member:nth-child(2) {
+        margin-top: 20px;
+        margin-left: 4px;
+    }
+    .comb-2 .member:nth-child(1) {
+        margin-top: 8px;
+    }
+    .comb-3 .member:nth-child(1) {
+        margin-top: 62px;
+        margin-left: -21px;
+    }
+    .comb-3 .member:nth-child(2) {
+        margin-top: 20px;
+        margin-left: -20px;
+    }
+    .comb-3 .member:nth-child(3) {
+        margin-left: -19px;
+        margin-top: 33px;
+    }
+    .comb-4 .member:nth-child(1) {
+        margin-left: -21px;
+        margin-top: 7px;
+    }
+    .comb-5 .member:nth-child(1) {
+        margin-top: -25px;
+        margin-left: -4px;
+    }
+    .comb-5 .member:nth-child(2) {
+        margin-top: 17px;
+        margin-left: -4px;
+    }
+    .comb-6 .member:nth-child(1) {
+        margin-top: -11px;
+        margin-left: 21px;
+    }
+    .comb-6 .member:nth-child(2) {
+        margin-top: 13px;
+        margin-left: 21px;
+    }
+    .comb-6 .member:nth-child(3) {
+        margin-top: 24px;
+        margin-left: 22px;
+    }
+    .comb-7 .member:nth-child(3) {
+        margin-top: 14px;
+        margin-left: 0px;
+    }
+    .comb-7 .member:nth-child(1) {
+        margin-top: -54px;
+        margin-left: 0px;
+    }
+    .comb-8 .outer .member {
+        margin-top: -12px;
+    }
+    .comb-8 .inter-1 .member:nth-child(2) {
+        margin-top: -3px;
+    }
+    .comb-8 .inter-1 .member:nth-child(2) {
+        margin-top: -42px;
+        margin-left: 4px;
+    }
+    .comb-8 .inter-2 .member:nth-child(2) {
+        margin-top: -29px;
+        margin-left: 7px;
+    }
+    .comb-8 .inter-3 .member:nth-child(1) {
+        margin-top: -25px;
+        margin-left: -2px;
+    }
+    .vl {
+        margin-top: 24px;
+        height: 40px;
+        margin-left: 69px;
+    }
+    .vl-3 {
+        height: 49px;
+        margin-left: 1px;
+        margin-top: -62px;
+    }
+    .vl-4 {
+        margin-top: -63px;
+        margin-left: 69px;
+        width: 10px;
+        height: 38px;
+    }
+    .vl-5 {
+        margin-top: -60px;
+        height: 40px;
+        margin-left: 38px;
+        width: 10px;
+    }
+    .vl-6 {
+        margin-top: -55px;
+        margin-left: 69px;
+        width: 10px;
+        height: 40px;
+    }
+    .vl-7 {
+        margin-top: -234px;
+        height: 42px;
+        margin-left: 29px;
+    }
+    .vl-8 {
+        margin-top: -62px;
+        height: 43px;
+        margin-left: 63px;
+        transform: rotate( 22deg);
+    }
+    .vl-9 {
+        margin-top: -3px;
+        height: 37px;
+        margin-left: 63px;
+    }
+    .vl-10 {
+        margin-top: -4px;
+        height: 42px;
+        margin-left: 62px;
+        transform: rotate( 204deg);
+    }
+    .vl-11 {
+        margin-top: -21px;
+        height: 45px;
+        margin-left: 31px;
+    }
+    .vl-12 {
+        margin-top: -68px;
+        height: 48px;
+        margin-left: -4px;
+        transform: rotate( 338deg);
+    }
+    .vl-13 {
+        margin-top: -6px;
+        height: 40px;
+        margin-left: 62px;
+    }
+    .vl-14 {
+        margin-top: -2px;
+        height: 41px;
+        margin-left: 65px;
+    }
+    .vl-15 {
+        margin-top: -177px;
+        height: 54px;
+        margin-left: 12px;
+    }
+    .vl-16 {
+        margin-top: -28px;
+        height: 42px;
+        margin-left: 46px;
+    }
+    .vl-17 {
+        margin-top: -5px;
+        height: 43px;
+        margin-left: 47px;
+    }
+    .vl-18 {
+        height: 50px;
+        margin-top: -28px;
+        margin-left: 13px;
+    }
+    .vl-19 {
+        margin-top: -28px;
+        height: 46px;
+        margin-left: 46px;
+    }
+    .vl-20 {
+        margin-top: -6px;
+        height: 42px;
+        margin-left: 46px;
+        transform: rotate( 204deg);
+    }
+    .vl-21 {
+        margin-top: -24px;
+        height: 48px;
+        margin-left: 11px;
+    }
+    .vl-22 {
+        margin-top: -96px;
+        height: 53px;
+        margin-left: 9px;
+    }
+    .vl-23 {
+        margin-top: -30px;
+        height: 46px;
+        margin-left: 46px;
+    }
+    .vl-24 {
+        margin-top: -7px;
+        height: 40px;
+        margin-left: 47px;
+    }
+    .vl-25 {
+        margin-top: -119px;
+        height: 44px;
+        margin-left: 46px;
+    }
+    .vl-26 {
+        margin-top: 10px;
+        height: 56px;
+        margin-left: 84px;
+    }
+    .vl-27 {
+        margin-top: -141px;
+        height: 38px;
+        margin-left: 20px;
+    }
+    .vl-28 {
+        margin-top: -60px;
+        height: 45px;
+        margin-left: 50px;
+    }
+    .vl-29 {
+        margin-top: -24px;
+        height: 39px;
+        margin-left: 81px;
+    }
+    .vl-30 {
+        margin-top: -10px;
+        height: 43px;
+        margin-left: 29px;
+    }
+    .vl-31 {
+        margin-top: -50px;
+        height: 27px;
+        margin-left: 59px;
+        transform: rotate( 205deg);
+    }
+    .vl-32 {
+        margin-top: -45px;
+        margin-left: -5px;
+        height: 44px;
+    }
+    .vl-33 {
+        margin-top: -79px;
+        margin-left: -5px;
+        height: 43px;
+    }
+    .vl-34 {
+        margin-top: -120px;
+        height: 43px;
+        margin-left: 27px;
+    }
+    .vl-35 {
+        margin-top: -25px;
+        height: 42px;
+        margin-left: 61px;
+    }
+    .vl-36 {
+        margin-top: -8px;
+        height: 45px;
+        margin-left: 61px;
+    }
+    .vl-37 {
+        margin-top: -32px;
+        height: 52px;
+        margin-left: 29px;
+    }
+    .vl-38 {
+        margin-top: -32px;
+        transform: rotate( 145deg);
+        height: 47px;
+        margin-left: 63px;
+    }
+    .vl-39 {
+        margin-top: -147px;
+        height: 38px;
+        margin-left: 61px;
+    }
+    .vl-40 {
+        margin-top: -74px;
+        height: 40px;
+        margin-left: 61px;
+    }
+    .vl-41 {
+        margin-top: -57px;
+        height: 37px;
+        margin-left: 35px;
+    }
+    .vl-42 {
+        margin-top: -36px;
+        margin-left: 170px;
+        height: 39px;
+    }
+    .vl-43 {
+        margin-top: -22px;
+        height: 41px;
+        margin-left: 142px;
+    }
+    .vl-44 {
+        margin-top: -2px;
+        height: 40px;
+        margin-left: 141px;
+    }
+    .vl-45 {
+        margin-top: -22px;
+        height: 43px;
+        margin-left: 173px;
+    }
+    .vl-46 {
+        margin-top: -22px;
+        height: 34px;
+        margin-left: 142px;
+    }
+    .vl-47 {
+        margin-top: -1px;
+        height: 37px;
+        margin-left: 141px;
+    }
+    .vl-48 {
+        margin-top: -24px;
+        height: 45px;
+        margin-left: 175px;
+    }
+    .vl-49 {
+        margin-top: -26px;
+        height: 34px;
+        margin-left: 143px;
+    }
+    .vl-3 span.dots:nth-child(2) {
+        margin-top: 46px;
+        margin-left: 66px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-3 span.dots:nth-child(1) {
+        margin-top: -4px;
+        margin-left: 66px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-9 span.dots {
+        top: -2px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-15 span.dots {
+        top: 49px;
+        left: -3px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-25 span.dots {
+        top: 40px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-28 span.dots {
+        top: 38px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-30 span.dots {
+        top: 42px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-30 span.dots:nth-child(2) {
+        margin-top: -47px;
+        margin-left: 1px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-31 span.dots {
+        top: 26px;
+        left: -1px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-32 span.dots {
+        top: 117px;
+        left: -1px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-33 span.dots {
+        top: 38px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-34 span.dots {
+        top: 40px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-40 span.dots {
+        top: 37px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-41 span.dots {
+        top: 36px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-42 span.dots {
+        top: 35px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-43 span.dots {
+        top: 37px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-44 span.dots {
+        top: 38px;
+        left: -3px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-45 span.dots {
+        top: 66px;
+        left: 4px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-46 span.dots {
+        top: 33px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-47 span.dots {
+        top: 54px;
+        left: -111px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-48 span.dots {
+        top: 43px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-49 span.dots {
+        top: 32px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .circle-image {
+        height: 88px;
+        width: 88px;
+    }
+    .circ {
+        width: 119px;
+        height: 119px;
     }
 }
