@@ -1,0 +1,3831 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.004);
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.container-1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: 500;
+}
+
+p {
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: #3e3d3d;
+    margin: 0;
+}
+
+.modal-description {
+    display: none;
+}
+
+.container-2 {
+    width: 100%;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 40%;
+    color: red;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 40%;
+    color: red;
+}
+
+.carousel-indicators {
+    bottom: -20%;
+    z-index: 0;
+}
+
+.carousel-control.right {
+    right: -9%;
+}
+
+.carousel-control {
+    left: -96px;
+    width: 10%;
+    text-shadow: none;
+}
+
+.carousel-indicators li {
+    background-color: darkgrey !important;
+    border: 1px solid black;
+}
+
+.people {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    cursor: pointer;
+}
+
+img:hover {
+    -webkit-filter: unset;
+    filter: unset;
+}
+
+.team-1, .team-2 {
+    display: contents;
+    justify-content: center;
+}
+
+.member {
+    width: 95px;
+    height: 90px;
+    clip-path: polygon(0% 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0%, 25% 0%);
+}
+
+.member::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: linear-gradient(to right, transparent, #1779ff);
+}
+
+.member::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #1779ff);
+}
+
+.comb-1 .member:nth-child(2), .comb-2 .member:nth-child(4), .comb-6 .member:nth-child(1), .comb-6 .member:nth-child(3), .comb-7 .member:nth-child(1), .comb-7 .member:nth-child(2), .comb-4 .member:nth-child(1) {
+    background-color: #de4360e6;
+}
+
+.member {
+    background-color: #070707e6;
+}
+
+.comb-1 {
+    margin-top: 50px;
+}
+
+.comb-1 .member:nth-child(1) {
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 3.5s;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.member.loop-image-1 {
+    margin-top: 12px;
+}
+
+.member.loop-image-2 {
+    margin-top: 25px;
+}
+
+.comb-1 .member:nth-child(2) {
+    margin-top: -42px;
+    margin-left: 2px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 6.5s;
+    animation-play-state: running;
+}
+
+.comb-2 {
+    margin-top: -10px;
+}
+
+.comb-2 .member:nth-child(1) {
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 9.5s;
+    animation-play-state: running;
+}
+
+.comb-2 .member:nth-child(2) {
+    margin-left: -4px;
+    margin-top: 27px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 12.5s;
+    animation-play-state: running;
+}
+
+.comb-2 .member:nth-child(3) {
+    margin-top: 20px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 15.5s;
+    animation-play-state: running;
+}
+
+.comb-2 .member:nth-child(4) {
+    margin-top: 20px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 18.5s;
+    animation-play-state: running;
+}
+
+.comb-3 {
+    margin-top: -95px;
+    margin-left: 20px;
+}
+
+.comb-3 .member:nth-child(1) {
+    margin-top: 32px;
+    margin-left: -21px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 21.5s;
+    animation-play-state: running;
+}
+
+.comb-3 .member:nth-child(2) {
+    margin-top: 25px;
+    margin-left: -20px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 24.5s;
+    animation-play-state: running;
+}
+
+.comb-3 .member:nth-child(3) {
+    margin-left: -19px;
+    margin-top: 19px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 27.5s;
+    animation-play-state: running;
+}
+
+.comb-4 {
+    margin-left: 25px;
+}
+
+.comb-4 .member:nth-child(1) {
+    margin-left: -21px;
+    margin-top: -17px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 30.5s;
+    animation-play-state: running;
+}
+
+.comb-4 .member:nth-child(2) {
+    margin-left: -21px;
+    margin-top: 35px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 33.5s;
+    animation-play-state: running;
+}
+
+.comb-4 .member:nth-child(3) {
+    margin-left: -21px;
+    margin-top: 21px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 36.5s;
+    animation-play-state: running;
+}
+
+.comb-5 {
+    margin-left: 36px;
+    margin-top: -27px;
+}
+
+.comb-5 .member:nth-child(1) {
+    margin-top: -61px;
+    margin-left: -8px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 39.5s;
+    animation-play-state: running;
+}
+
+.comb-5 .member:nth-child(2) {
+    margin-top: 31px;
+    margin-left: -5px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 42.5s;
+    animation-play-state: running;
+}
+
+.comb-6 {
+    margin-left: 4px;
+}
+
+.comb-6 .member:nth-child(1) {
+    margin-top: -11px;
+    margin-left: 7px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 45.5s;
+    animation-play-state: running;
+}
+
+.comb-6 .member:nth-child(2) {
+    margin-top: 30px;
+    margin-left: 7px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 48.5s;
+    animation-play-state: running;
+}
+
+.comb-6 .member:nth-child(3) {
+    margin-top: 24px;
+    margin-left: 7px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 51.5s;
+    animation-play-state: running;
+}
+
+.comb-7 {
+    margin-right: 84px;
+}
+
+.comb-7 .member:nth-child(1) {
+    margin-top: -64px;
+    margin-left: 0px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 54.5s;
+    animation-play-state: running;
+}
+
+.comb-7 .member:nth-child(2) {
+    margin-top: 27px;
+    margin-left: 0px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 57.5s;
+    animation-play-state: running;
+}
+
+.comb-7 .member:nth-child(3) {
+    margin-top: 26px;
+    margin-left: 0px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 60.5s;
+    animation-play-state: running;
+}
+
+.comb-7 .member:nth-child(4) {
+    margin-top: 74px;
+    margin-left: 84px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 63.5s;
+    animation-play-state: running;
+}
+
+.inter-1, .inter-2, .inter-3 {
+    display: flex;
+}
+
+.inter-1 {
+    margin-top: 26px;
+}
+
+.comb-8 {
+    margin-left: -87px;
+}
+
+.comb-8 .outer .member {
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 66.5s;
+    animation-play-state: running;
+}
+
+.comb-8 .inter-1 .member:nth-child(1) {
+    margin-top: -6px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 69.5s;
+    animation-play-state: running;
+}
+
+.comb-8 .inter-1 .member:nth-child(2) {
+    margin-top: -67px;
+    margin-left: 4px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 72.5s;
+    animation-play-state: running;
+}
+
+.comb-8 .inter-1 .member:nth-child(3) {
+    margin-top: 0px;
+    margin-left: 0px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 75.5s;
+    animation-play-state: running;
+}
+
+.comb-8 .inter-2 .member:nth-child(3) {
+    margin-top: 13px;
+    margin-left: 0px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 78.5s;
+    animation-play-state: running;
+}
+
+.comb-8 .inter-2 .member:nth-child(2) {
+    margin-top: -39px;
+    margin-left: 4px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 81.5s;
+    animation-play-state: running;
+}
+
+.comb-8 .inter-2 .member:nth-child(1) {
+    margin-top: 18px;
+    margin-left: 0px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 84.5s;
+    animation-play-state: running;
+}
+
+.inter-3 {
+    justify-content: center;
+}
+
+.comb-8 .inter-3 .member:nth-child(1) {
+    margin-top: -40px;
+    margin-left: 2px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 87.5s;
+    animation-play-state: running;
+}
+
+.comb-8 .outer {
+    display: flex;
+}
+
+.comb-9 {
+    margin-top: -114px;
+    margin-left: -95px;
+}
+
+.vl {
+    margin-top: 42px;
+    transform: rotate(27deg);
+    border-right: 3px solid #410883;
+    height: 64px;
+    margin-left: 93px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes increase {
+    100% {
+        width: 0px;
+    }
+}
+
+.vl-3 {
+    transform: rotate(90deg);
+    border-right: 3px solid #410883;
+    height: 80px;
+    margin-left: -19px;
+    margin-top: -102px;
+}
+
+.vl-4 {
+    margin-top: -96px;
+    transform: rotate(336deg);
+    border-right: 3px solid #410883;
+    height: 60px;
+    margin-left: 94px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-5 {
+    margin-top: -99px;
+    transform: rotate(269deg);
+    border-right: 3px dotted #410883;
+    height: 78px;
+    margin-left: 38px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-6 {
+    margin-top: -99px;
+    transform: rotate(28deg);
+    border-right: 3px solid #410883;
+    height: 62px;
+    margin-left: 97px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-7 {
+    margin-top: -244px;
+    transform: rotate(90deg);
+    border-right: 3px solid #410883;
+    height: 66px;
+    margin-left: 42px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-8 {
+    margin-top: -87px;
+    transform: rotate(29deg);
+    border-right: 3px solid #410883;
+    height: 59px;
+    margin-left: 92px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-9 {
+    margin-top: -9px;
+    transform: rotate(154deg);
+    border-right: 3px solid #410883;
+    height: 60px;
+    margin-left: 92px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-10 {
+    margin-top: -2px;
+    transform: rotate(208deg);
+    border-right: 3px solid #410883;
+    height: 54px;
+    margin-left: 93px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-11 {
+    margin-top: -33px;
+    transform: rotate(270deg);
+    border-right: 3px solid #410883;
+    height: 66px;
+    margin-left: 47px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-12 {
+    margin-top: -89px;
+    transform: rotate(330deg);
+    border-right: 3px solid #410883;
+    height: 60px;
+    margin-left: -5px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-13 {
+    margin-top: -4px;
+    transform: rotate(153deg);
+    border-right: 3px solid #410883;
+    height: 54px;
+    margin-left: 92px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-14 {
+    margin-top: -4px;
+    transform: rotate(205deg);
+    border-right: 3px solid #410883;
+    height: 55px;
+    margin-left: 95px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-15 {
+    margin-top: -244px;
+    transform: rotate(270deg);
+    border-right: 3px solid #410883;
+    height: 72px;
+    margin-left: 28px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-16 {
+    margin-top: -41px;
+    transform: rotate(153deg);
+    border-right: 3px solid #410883;
+    height: 59px;
+    margin-left: 77px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-17 {
+    margin-top: -5px;
+    transform: rotate(206deg);
+    border-right: 3px solid #410883;
+    height: 63px;
+    margin-left: 77px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-18 {
+    margin-top: -39px;
+    transform: rotate(270deg);
+    border-right: 3px solid #410883;
+    height: 72px;
+    margin-left: 25px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-19 {
+    margin-top: -38px;
+    transform: rotate(152deg);
+    border-right: 3px solid #410883;
+    height: 63px;
+    margin-left: 79px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-20 {
+    margin-top: -6px;
+    transform: rotate(206deg);
+    border-right: 3px solid #410883;
+    height: 53px;
+    margin-left: 79px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-21 {
+    margin-top: -37px;
+    transform: rotate(270deg);
+    border-right: 3px solid #410883;
+    height: 73px;
+    margin-left: 26px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-22 {
+    margin-top: -250px;
+    transform: rotate(270deg);
+    border-right: 3px solid #410883;
+    height: 71px;
+    margin-left: 22px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-23 {
+    margin-top: -39px;
+    transform: rotate(332deg);
+    border-right: 3px solid #410883;
+    height: 67px;
+    margin-left: 73px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-24 {
+    margin-top: -9px;
+    transform: rotate(206deg);
+    border-right: 3px solid #410883;
+    height: 69px;
+    margin-left: 74px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-25 {
+    margin-top: -188px;
+    transform: rotate(206deg);
+    border-right: 3px solid #410883;
+    height: 67px;
+    margin-left: 74px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-26 {
+    margin-top: 23px;
+    transform: rotate(269deg);
+    border-right: 3px solid rgb(65, 8, 131);
+    height: 66px;
+    margin-left: 122px;
+    width: 10px;
+    animation: 3s ease 0s 1 normal forwards running increase;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-27 {
+    margin-top: -220px;
+    transform: rotate(207deg);
+    border-right: 3px solid rgb(65, 8, 131);
+    height: 60px;
+    margin-left: 5px;
+    width: 10px;
+    animation: 3s ease 0s 1 normal forwards running increase;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-28 {
+    margin-top: -90px;
+    transform: rotate(269deg);
+    border-right: 3px solid rgb(65, 8, 131);
+    height: 65px;
+    margin-left: 51px;
+    width: 10px;
+    animation: 3s ease 0s 1 normal forwards running increase;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-29 {
+    margin-top: -38px;
+    transform: rotate(151deg);
+    border-right: 3px solid rgb(65, 8, 131);
+    height: 75px;
+    margin-left: 100px;
+    width: 10px;
+    animation: 3s ease 0s 1 normal forwards running increase;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-30 {
+    margin-top: -22px;
+    transform: rotate(270deg);
+    border-right: 3px solid #410883;
+    height: 63px;
+    margin-left: 45px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-31 {
+    margin-top: -86px;
+    transform: rotate(207deg);
+    border-right: 3px solid #410883;
+    height: 59px;
+    margin-left: 91px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-32 {
+    margin-top: -60px;
+    transform: rotate(151deg);
+    border-right: 3px solid #410883;
+    height: 59px;
+    margin-left: 1px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-33 {
+    margin-top: -112px;
+    transform: rotate(207deg);
+    border-right: 3px solid #410883;
+    height: 61px;
+    margin-left: 1px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-34 {
+    margin-top: -185px;
+    transform: rotate( 270deg);
+    border-right: 3px solid #410883;
+    height: 70px;
+    margin-left: 48px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-35 {
+    margin-top: -37px;
+    transform: rotate(152deg);
+    border-right: 3px solid #410883;
+    height: 60px;
+    margin-left: 92px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-36 {
+    margin-top: -8px;
+    transform: rotate(208deg);
+    border-right: 3px solid #410883;
+    height: 66px;
+    margin-left: 90px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-37 {
+    margin-top: -39px;
+    transform: rotate(270deg);
+    border-right: 3px solid #410883;
+    height: 67px;
+    margin-left: 42px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-38 {
+    margin-top: -40px;
+    transform: rotate(152deg);
+    border-right: 3px solid #410883;
+    height: 64px;
+    margin-left: 90px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-39 {
+    margin-top: -226px;
+    transform: rotate(28deg);
+    border-right: 3px solid #410883;
+    height: 64px;
+    margin-left: 94px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-40 {
+    margin-top: -124px;
+    transform: rotate( 154deg);
+    border-right: 3px solid #410883;
+    height: 66px;
+    margin-left: 94px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-41 {
+    margin-top: -93px;
+    transform: rotate( 90deg);
+    border-right: 3px solid #410883;
+    height: 63px;
+    margin-left: 49px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-42 {
+    margin-top: -54px;
+    transform: rotate(-90deg);
+    border-right: 3px solid #410883;
+    height: 64px;
+    margin-left: 240px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-43 {
+    margin-top: -35px;
+    transform: rotate( 209deg);
+    border-right: 3px solid #410883;
+    height: 52px;
+    margin-left: 195px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-44 {
+    margin-top: -4px;
+    transform: rotate(152deg);
+    border-right: 3px solid #410883;
+    height: 61px;
+    margin-left: 195px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-45 {
+    margin-top: -37px;
+    transform: rotate( 89deg);
+    border-right: 3px solid #410883;
+    height: 67px;
+    margin-left: 244px;
+    width: 10px;
+}
+
+.vl-46 {
+    margin-top: -31px;
+    transform: rotate(29deg);
+    border-right: 3px solid #410883;
+    height: 55px;
+    margin-left: 197px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-47 {
+    margin-top: -7px;
+    transform: rotate(152deg);
+    border-right: 3px solid #410883;
+    height: 58px;
+    margin-left: 196px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-48 {
+    margin-top: -33px;
+    transform: rotate(90deg);
+    border-right: 3px solid #410883;
+    height: 64px;
+    margin-left: 243px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-49 {
+    margin-top: -35px;
+    transform: rotate(28deg);
+    border-right: 3px solid #410883;
+    height: 54px;
+    margin-left: 197px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-50 {
+    margin-top: -256px;
+    transform: rotate( 91deg);
+    border-right: 3px solid #410883;
+    height: 94px;
+    margin-left: 154px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-51 {
+    margin-top: -129px;
+    transform: rotate( 154deg);
+    border-right: 3px solid rgb(65, 8, 131);
+    height: 70px;
+    margin-left: 3px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-52 {
+    margin-top: -130px;
+    transform: rotate( 155deg);
+    border-right: 3px solid rgb(65, 8, 131);
+    height: 64px;
+    margin-left: 5px;
+    width: 10px;
+    animation: 3s ease 0s 1 normal forwards running increase;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-53 {
+    margin-top: -64px;
+    transform: rotate( 207deg);
+    border-right: 3px solid rgb(65, 8, 131);
+    height: 62px;
+    margin-left: 98px;
+    width: 10px;
+    animation: 3s ease 0s 1 normal forwards running increase;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-54 {
+    margin-top: -90px;
+    transform: rotate( 89deg);
+    border-right: 3px solid #410883;
+    height: 61px;
+    margin-left: 47px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-55 {
+    margin-top: -35px;
+    transform: rotate( 155deg);
+    border-right: 3px solid #410883;
+    height: 61px;
+    margin-left: 93px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-56 {
+    margin-top: -121px;
+    transform: rotate( 26deg);
+    border-right: 3px solid #410883;
+    height: 65px;
+    margin-left: 95px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-57 {
+    margin-top: -160px;
+    transform: rotate( 90deg);
+    border-right: 3px solid #410883;
+    height: 65px;
+    margin-left: 43px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-58 {
+    margin-top: -93px;
+    transform: rotate( 30deg);
+    border-right: 3px solid #410883;
+    height: 65px;
+    margin-left: 92px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-59 {
+    margin-top: -70px;
+    transform: rotate( -26deg);
+    border-right: 3px solid #410883;
+    height: 65px;
+    margin-left: -5px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-60 {
+    margin-top: 0px;
+    transform: rotate( -27deg);
+    border-right: 3px solid #410883;
+    height: 68px;
+    margin-left: 93px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-61 {
+    margin-top: -247px;
+    transform: rotate( -90deg);
+    border-right: 3px solid #410883;
+    height: 68px;
+    margin-left: 145px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-62 {
+    margin-top: 33px;
+    transform: rotate( -91deg);
+    border-right: 3px solid #410883;
+    height: 82px;
+    margin-left: 145px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.vl-63 {
+    margin-top: -275px;
+    transform: rotate( -153deg);
+    border-right: 3px solid #410883;
+    height: 69px;
+    margin-left: 96px;
+    width: 10px;
+    -webkit-animation: increase 5s;
+    -moz-animation: increase 5s;
+    -o-animation: increase 5s;
+    animation: increase 5s;
+    animation-fill-mode: forwards;
+}
+
+.dots {
+    position: absolute;
+    background: #0000FF;
+    border-radius: 50%;
+    z-index: 2;
+    animation: cssAnimation 0s 3s forwards;
+    visibility: hidden;
+}
+
+@keyframes cssAnimation {
+    to {
+        visibility: visible;
+    }
+}
+
+.vl span.dots {
+    margin-top: -2px;
+    margin-left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-3 span.dots:nth-child(1) {
+    margin-top: 78px;
+    margin-left: 114px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-3 span.dots:nth-child(2) {
+    margin-top: -4px;
+    margin-left: 114px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-4 span.dots {
+    margin-top: -6px;
+    margin-left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-5 span.dots {
+    margin-top: -6px;
+    margin-left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-6 span.dots {
+    margin-top: -6px;
+    margin-left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.comb-1 span:nth-child(6) {
+    top: -15px;
+    right: calc(50% - 3px);
+}
+
+.vl-7 span.dots {
+    top: -7px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-8 span.dots {
+    top: -7px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-9 span.dots {
+    top: -7px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-10 span.dots {
+    top: -7px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-11 span.dots {
+    top: -7px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-12 span.dots {
+    top: -7px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-13 span.dots {
+    top: -7px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-14 span.dots {
+    top: -7px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-15 span.dots {
+    top: 69px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-16 span.dots {
+    top: -4px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-17 span.dots {
+    top: -4px;
+    left: -1px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-18 span.dots {
+    top: -4px;
+    left: -1px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-19 span.dots {
+    top: -1px;
+    left: -1px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-20 span.dots {
+    top: -6px;
+    left: -1px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-22 span.dots {
+    top: 100px;
+    left: 61px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-23 span.dots {
+    top: -3px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-24 span.dots {
+    top: -3px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-25 span.dots {
+    top: -44px;
+    left: -55px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-26 span.dots {
+    top: 66px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-27 span.dots {
+    top: 56px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-27 span.dots:nth-child(2) {
+    top: -4px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-28 span.dots {
+    top: 62px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-30 span.dots {
+    top: 64px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-30 span.dots:nth-child(2) {
+    margin-top: -65px;
+    margin-left: 1px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-31 span.dots {
+    top: 58px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-32 span.dots {
+    top: 55px;
+    left: -3px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-33 span.dots {
+    top: 59px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-34 span.dots {
+    top: 60px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-35 span.dots {
+    top: -1px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-36 span.dots {
+    top: -1px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-37 span.dots {
+    top: -1px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-38 span.dots {
+    top: -1px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-39 span.dots {
+    top: -4px;
+    left: -3px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-40 span.dots {
+    top: 63px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-41 span.dots {
+    top: 62px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-42 span.dots {
+    top: 63px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-43 span.dots {
+    top: 49px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-44 span.dots {
+    top: 58px;
+    left: -4px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-45 span.dots {
+    top: 66px;
+    left: 3px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-46 span.dots {
+    top: 50px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-47 span.dots {
+    top: 54px;
+    left: -114px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-48 span.dots {
+    top: 62px;
+    left: -3px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-48 span.dots:nth-child(2) {
+    top: -2px;
+    left: -3px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-49 span.dots {
+    top: 53px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-52 span.dots {
+    top: 62px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-53 span.dots {
+    top: 62px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-55 span.dots {
+    top: 58px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-57 span.dots {
+    top: -5px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-58 span.dots {
+    top: -3px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-59 span.dots {
+    top: -3px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.vl-63 span.dots {
+    top: 67px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+}
+
+.circle {
+    margin-top: 8px;
+    margin-left: -16px;
+}
+
+.circle-2 {
+    margin-top: -139px;
+    margin-left: -1px;
+}
+
+.line-1 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border-right: 4px solid #ff0080;
+    margin: auto;
+    animation: ani01 5s linear infinite;
+}
+
+.line-2 {
+    margin-top: -138px;
+}
+
+@keyframes ani01 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle-image {
+    height: 118px;
+    width: 118px;
+    -webkit-clip-path: circle(60.0% at 50% 10%);
+    clip-path: circle(50.0% at 50% 50%);
+    border-right: 4px solid #00ffff;
+}
+
+.circ {
+    border-radius: 50%;
+    width: 149px;
+    height: 150px;
+    display: inline-block;
+    background-color: transparent;
+    border-top: 9px solid transparent;
+    border-left: 9px solid #470fec;
+    border-right: 9px solid #470fec;
+    border-bottom: 9px solid #470fec;
+    transform: rotate(313deg);
+    margin-top: 40px;
+    margin-left: -16px;
+    animation: spin 8s linear infinite;
+    -webkit-animation: spin 8s linear infinite;
+    -moz-animation: spin 8s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.member-1, .member:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 20%;
+    max-width: 75%;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.out {
+    animation-name: zoom-out;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1)
+    }
+    to {
+        -webkit-transform: scale(2)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.4)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes zoom-out {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(0)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s linear;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(192, 191, 191, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: unset
+}
+
+@media only screen and (max-width: 1300px) {
+    
+    .carousel-indicators {
+        bottom: -10%;
+        z-index: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 1087px !important;
+    }
+    .carousel-control {
+        left: -74px;
+    }
+    .carousel-control.right {
+        right: -7%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .carousel-control {
+        left: -64px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .carousel-control {
+        left: -25px;
+    }
+    .carousel-control.right {
+        right: -2%;
+    }
+    P {
+        font-size: 18px;
+    }
+    .prev, .next {
+        display: none;
+    }
+    .member {
+        width: 80px;
+        height: 75px;
+        clip-path: polygon(0% 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0%, 25% 0%);
+    }
+    .comb-1 .member:nth-child(2) {
+        margin-top: -34px;
+        margin-left: 3px;
+    }
+    .comb-2 {
+        margin-top: 3px;
+    }
+    .comb-2 .member:nth-child(2) {
+        margin-top: 18px;
+    }
+    .comb-3 .member:nth-child(1) {
+        margin-top: 50px;
+        margin-left: -21px;
+    }
+    .comb-3 .member:nth-child(2) {
+        margin-top: 16px;
+        margin-left: -20px;
+    }
+    .comb-3 .member:nth-child(3) {
+        margin-left: -19px;
+        margin-top: 26px;
+    }
+    .comb-4 .member:nth-child(1) {
+        margin-left: -21px;
+        margin-top: -3px;
+    }
+    .comb-4 .member:nth-child(2) {
+        margin-left: -21px;
+        margin-top: 27px;
+    }
+    .comb-5 {
+        margin-left: 38px;
+        margin-top: -123px;
+    }
+    .comb-5 .member:nth-child(1) {
+        margin-top: -39px;
+        margin-left: -8px;
+    }
+    .comb-6 {
+        margin-top: 18px;
+        margin-left: 4px;
+    }
+    .comb-6 .member:nth-child(2) {
+        margin-top: 20px;
+    }
+    .comb-6 .member:nth-child(1) {
+        margin-top: -24px;
+    }
+    .comb-7 .member:nth-child(2) {
+        margin-top: 33px;
+    }
+    .comb-7 .member:nth-child(3) {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .comb-8 .inter-1 .member:nth-child(1) {
+        margin-top: -12px;
+    }
+    .comb-8 .inter-1 .member:nth-child(3) {
+        margin-top: -8px;
+        margin-left: 14px;
+    }
+    .comb-8 .inter-1 .member:nth-child(2) {
+        margin-top: -61px;
+        margin-left: 7px;
+    }
+    .comb-8 .inter-2 .member:nth-child(1) {
+        margin-top: 22px;
+    }
+    .comb-8 .inter-2 .member:nth-child(2) {
+        margin-top: -32px;
+    }
+    .comb-8 .inter-2 .member:nth-child(3) {
+        margin-top: 21px;
+        margin-left: 13px;
+    }
+    .comb-8 .inter-3 .member:nth-child(1) {
+        margin-top: -28px;
+        margin-left: -10px;
+    }
+    .comb-8 .outer .member {
+        margin-top: -10px;
+    }
+    .comb-8 .inter-3 .member:nth-child(1) {
+        margin-top: -36px;
+        margin-left: -10px;
+    }
+    .inter-1 {
+        margin-top: 37px;
+        margin-left: -1px;
+    }
+    .vl {
+        margin-top: 30px;
+        height: 55px;
+        margin-left: 82px;
+        width: 10px;
+    }
+    .vl-3 {
+        height: 73px;
+        margin-left: -12px;
+        margin-top: -86px;
+    }
+    .vl-4 {
+        margin-top: -95px;
+        margin-left: 81px;
+        width: 10px;
+    }
+    .vl-5 {
+        margin-top: -91px;
+        height: 66px;
+        margin-left: 38px;
+        width: 10px;
+    }
+    .vl-6 {
+        margin-top: -94px;
+        margin-left: 82px;
+        width: 10px;
+    }
+    .vl-3 span.dots:nth-child(1) {
+        margin-top: 71px;
+        margin-left: 92px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-3 span.dots:nth-child(2) {
+        margin-top: -2px;
+        margin-left: 91px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-7 {
+        margin-top: -211px;
+        height: 56px;
+        margin-left: 35px;
+    }
+    .vl-8 {
+        margin-top: -75px;
+        height: 49px;
+        margin-left: 80px;
+    }
+    .vl-9 {
+        margin-top: -4px;
+        height: 51px;
+        margin-left: 78px;
+    }
+    .vl-10 {
+        margin-top: 2px;
+        height: 43px;
+        margin-left: 80px;
+    }
+    .vl-11 {
+        margin-top: -28px;
+        height: 61px;
+        margin-left: 39px;
+    }
+    .vl-12 {
+        margin-top: -82px;
+        height: 56px;
+        margin-left: -6px;
+        transform: rotate(335deg);
+    }
+    .vl-13 {
+        margin-top: -6px;
+        height: 54px;
+        margin-left: 80px;
+    }
+    .vl-14 {
+        margin-top: -4px;
+        height: 48px;
+        margin-left: 84px;
+    }
+    .vl-15 {
+        margin-top: -216px;
+        height: 62px;
+        margin-left: 17px;
+    }
+    .vl-15 span.dots {
+        top: 60px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-16 {
+        margin-top: -36px;
+        height: 54px;
+        margin-left: 59px;
+    }
+    .vl-17 {
+        margin-top: -5px;
+        height: 55px;
+        margin-left: 61px;
+    }
+    .vl-18 {
+        height: 63px;
+        margin-top: -32px;
+        margin-left: 17px;
+    }
+    .vl-19 {
+        margin-top: -34px;
+        height: 52px;
+        margin-left: 60px;
+    }
+    .vl-20 {
+        margin-top: -6px;
+        height: 51px;
+        margin-left: 60px;
+        transform: rotate(204deg);
+    }
+    .vl-21 {
+        margin-top: -32px;
+        height: 65px;
+        margin-left: 19px;
+    }
+    .vl-22 {
+        margin-top: -216px;
+        height: 61px;
+        margin-left: 15px;
+    }
+    .vl-22 span.dots {
+        top: 83px;
+        left: 49px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-23 {
+        margin-top: -34px;
+        height: 67px;
+        margin-left: 60px;
+    }
+    .vl-24 {
+        margin-top: -9px;
+        height: 54px;
+        margin-left: 64px;
+    }
+    .vl-25 {
+        margin-top: -161px;
+        height: 55px;
+        margin-left: 58px;
+    }
+    .vl-26 {
+        margin-top: 29px;
+        height: 56px;
+        margin-left: 105px;
+    }
+    .vl-26 span.dots {
+        top: 53px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-27 {
+        margin-top: -188px;
+        height: 74px;
+        margin-left: 7px;
+    }
+    .vl-27 span.dots {
+        top: 70px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-28 {
+        margin-top: -98px;
+        height: 55px;
+        margin-left: 50px;
+    }
+    .vl-28 span.dots {
+        top: 48px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-29 {
+        margin-top: -30px;
+        height: 57px;
+        margin-left: 85px;
+        transform: rotate( 157deg);
+    }
+    .vl-30 {
+        margin-top: -23px;
+        height: 67px;
+        margin-left: 39px;
+    }
+    .vl-30 span.dots {
+        top: 62px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-30 span.dots:nth-child(2) {
+        margin-top: -64px;
+        margin-left: 0px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-31 {
+        margin-top: -83px;
+        height: 53px;
+        margin-left: 83px;
+    }
+    .vl-31 span.dots {
+        top: 52px;
+        height: 7px;
+        margin-left: 1px;
+    }
+    .vl-32 {
+        margin-top: -52px;
+        margin-left: -6px;
+        height: 50px;
+    }
+    .vl-32 span.dots {
+        top: 48px;
+        left: -3px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-33 {
+        margin-top: -99px;
+        margin-left: -5px;
+        height: 51px;
+    }
+    .vl-33 span.dots {
+        top: 49px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-34 {
+        margin-top: -161px;
+        height: 66px;
+        margin-left: 36px;
+    }
+    .vl-34 span.dots {
+        top: 60px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-35 {
+        margin-top: -37px;
+        height: 57px;
+        margin-left: 79px;
+    }
+    .vl-36 {
+        margin-top: -8px;
+        height: 59px;
+        margin-left: 77px;
+    }
+    .vl-37 {
+        margin-top: -32px;
+        height: 52px;
+        margin-left: 42px;
+    }
+    .vl-38 {
+        margin-top: -31px;
+        transform: rotate(145deg);
+        height: 57px;
+        margin-left: 81px;
+    }
+    .vl-39 {
+        margin-top: -205px;
+        height: 57px;
+        margin-left: 81px;
+    }
+    .vl-40 {
+        margin-top: -107px;
+        height: 54px;
+        margin-left: 84px;
+    }
+    .vl-40 span.dots {
+        top: 51px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-41 {
+        margin-top: -86px;
+        height: 70px;
+        margin-left: 39px;
+    }
+    .vl-41 span.dots {
+        top: 67px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-42 {
+        margin-top: -63px;
+        margin-left: 213px;
+    }
+    .vl-43 {
+        margin-top: -35px;
+        height: 53px;
+        margin-left: 170px;
+    }
+    .vl-43 span.dots {
+        top: 50px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-44 {
+        margin-top: -9px;
+        height: 64px;
+        margin-left: 170px;
+        transform: rotate( 156deg);
+    }
+    .vl-44 span.dots {
+        top: 58px;
+        left: -3px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-45 {
+        margin-top: -38px;
+        height: 64px;
+        margin-left: 209px;
+        transform: rotate( 90deg);
+        ;
+    }
+    .vl-45 span.dots {
+        top: 59px;
+        left: 4px;
+    }
+    .vl-46 {
+        margin-top: -31px;
+        height: 46px;
+        margin-left: 171px;
+    }
+    .vl-46 span.dots {
+        top: 42px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-47 {
+        margin-top: -11px;
+        height: 59px;
+        margin-left: 172px;
+    }
+    .vl-47 span.dots {
+        top: 46px;
+        left: -96px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-48 {
+        margin-top: -32px;
+        height: 64px;
+        margin-left: 220px;
+    }
+    .vl-49 {
+        margin-top: -35px;
+        height: 48px;
+        margin-left: 174px;
+    }
+    .vl-49 span.dots {
+        top: 46px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-52 {
+        margin-top: -113px;
+        margin-left: 6px;
+        transform: rotate( 149deg);
+    }
+    .vl-53 {
+        margin-top: -57px;
+        margin-left: 86px;
+        height: 55px;
+    }
+    .vl-53 span.dots {
+        top: 53px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-54 {
+        margin-top: -80px;
+        margin-left: 40px;
+    }
+    .vl-55 {
+        margin-left: 82px;
+        margin-top: -34px;
+        height: 52px;
+        transform: rotate( 154deg);
+    }
+    .vl-55 span.dots {
+        top: 49px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-57 {
+        margin-top: -137px;
+    }
+    .vl-56 {
+        margin-top: -107px;
+        margin-left: 85px;
+        transform: rotate( 26deg);
+    }
+    .vl-59 {
+        margin-top: -66px;
+        margin-left: -3px;
+    }
+    .vl-60 {
+        margin-top: -4px;
+        transform: rotate( -24deg);
+        border-right: 3px solid #410883;
+        height: 49px;
+        margin-left: 88px;
+    }
+    .vl-61 {
+        margin-top: -228px;
+        transform: rotate( -90deg);
+        border-right: 3px solid #410883;
+        height: 68px;
+        margin-left: 126px;
+    }
+    .vl-62 {
+        margin-top: 32px;
+        transform: rotate( -91deg);
+        border-right: 3px solid #410883;
+        height: 66px;
+        margin-left: 126px;
+    }
+    .vl-63 {
+        margin-top: -248px;
+        transform: rotate( -153deg);
+        height: 69px;
+        margin-left: 89px;
+    }
+    .circle-2 {
+        margin-top: 0px;
+        margin-left: -99px;
+    }
+    .circ {
+        width: 129px;
+        height: 130px;
+    }
+    .circle {
+        margin-top: 107px;
+        margin-left: -20px;
+    }
+    .circle-image {
+        height: 98px;
+        width: 98px;
+    }
+    .line-2 {
+        margin-top: -118px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 900px !important;
+    }
+    .member {
+        width: 70px;
+        height: 70px;
+    }
+    .comb-1 .member:nth-child(2) {
+        margin-top: -34px;
+        margin-left: 11px;
+    }
+    .member.loop-image-2 {
+        margin-top: 25px;
+        margin-left: 13px;
+    }
+    .comb-3 {
+        margin-top: -86px;
+        margin-left: 7px;
+    }
+    .comb-3 .member:nth-child(1) {
+        margin-top: 40px;
+        margin-left: -8px;
+    }
+    .comb-3 .member:nth-child(2) {
+        margin-top: 24px;
+        margin-left: -8px;
+    }
+    .comb-3 .member:nth-child(3) {
+        margin-left: -8px;
+        margin-top: 16px;
+    }
+    .comb-5 .member:nth-child(2) {
+        margin-top: 31px;
+        margin-left: -16px;
+    }
+    .comb-6 {
+        margin-top: 18px;
+        margin-left: -1px;
+    }
+    .comb-8 .outer .member {
+        margin-top: -8px;
+    }
+    .comb-8 .inter-2 .member:nth-child(1) {
+        margin-top: 11px;
+    }
+    .comb-8 .inter-1 .member:nth-child(3) {
+        margin-top: -8px;
+        margin-left: 6px;
+    }
+    .inter-1 {
+        margin-top: 35px;
+        margin-left: -1px;
+    }
+    .vl {
+        margin-top: 30px;
+        height: 48px;
+        margin-left: 82px;
+        width: 10px;
+    }
+    .vl-3 {
+        height: 64px;
+        margin-left: -8px;
+        margin-top: -82px;
+    }
+    .vl-3 span.dots:nth-child(1) {
+        margin-top: 61px;
+        margin-left: 92px;
+    }
+    .vl-4 {
+        margin-top: -75px;
+        margin-left: 83px;
+        height: 50px;
+        width: 10px;
+    }
+    .vl-5 {
+        margin-top: -80px;
+        height: 58px;
+        margin-left: 42px;
+        width: 10px;
+    }
+    .vl-6 {
+        margin-top: -78px;
+        margin-left: 86px;
+        height: 52px;
+    }
+    .vl-7 {
+        margin-top: -192px;
+        height: 50px;
+        margin-left: 30px;
+    }
+    .vl-8 {
+        margin-top: -73px;
+        height: 49px;
+        margin-left: 72px;
+    }
+    .vl-9 {
+        margin-top: -4px;
+        height: 44px;
+        margin-left: 68px;
+    }
+    .vl-10 {
+        margin-top: 1px;
+        height: 38px;
+        margin-left: 69px;
+    }
+    .vl-11 {
+        margin-top: -23px;
+        height: 50px;
+        margin-left: 32px;
+    }
+    .vl-12 {
+        margin-top: -70px;
+        height: 47px;
+        margin-left: -9px;
+        transform: rotate( 330deg);
+    }
+    .vl-13 {
+        margin-top: -6px;
+        height: 54px;
+        margin-left: 70px;
+    }
+    .vl-14 {
+        margin-top: -4px;
+        height: 48px;
+        margin-left: 75px;
+    }
+    .vl-15 {
+        margin-top: -194px;
+        height: 53px;
+        margin-left: 28px;
+    }
+    .vl-15 span.dots {
+        top: 47px;
+        left: -2px;
+    }
+    .vl-16 {
+        margin-top: -31px;
+        height: 51px;
+        margin-left: 63px;
+    }
+    .vl-17 {
+        margin-top: -5px;
+        height: 50px;
+        margin-left: 63px;
+    }
+    .vl-18 {
+        height: 58px;
+        margin-top: -30px;
+        margin-left: 22px;
+    }
+    .vl-19 {
+        margin-top: -34px;
+        height: 50px;
+        margin-left: 63px;
+    }
+    .vl-20 {
+        margin-top: -6px;
+        height: 50px;
+        margin-left: 63px;
+        transform: rotate( 204deg);
+    }
+    .vl-21 {
+        margin-top: -24px;
+        height: 50px;
+        margin-left: 24px;
+    }
+    .vl-22 {
+        margin-top: -200px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    .vl-22 span.dots {
+        top: 71px;
+        left: 44px;
+    }
+    .vl-23 {
+        margin-top: -28px;
+        height: 50px;
+        margin-left: 49px;
+    }
+    .vl-24 {
+        margin-top: -9px;
+        height: 50px;
+        margin-left: 50px;
+    }
+    .vl-25 {
+        margin-top: -137px;
+        height: 50px;
+        margin-left: 49px;
+    }
+    .vl-25 span.dots {
+        top: -33px;
+        left: -40px;
+    }
+    .vl-27 {
+        margin-top: -176px;
+        height: 50px;
+        margin-left: 5px;
+    }
+    .vl-27 span.dots {
+        top: 48px;
+        left: -2px;
+    }
+    .vl-28 {
+        margin-top: -76px;
+        height: 55px;
+        margin-left: 46px;
+    }
+    .vl-29 {
+        margin-top: -30px;
+        height: 50px;
+        margin-left: 80px;
+        transform: rotate( 157deg);
+    }
+    .vl-52 {
+        margin-top: -97px;
+        margin-left: 5px;
+        transform: rotate( 154deg);
+        height: 50px;
+    }
+    .vl-52 span.dots {
+        top: 47px;
+        left: -2px;
+    }
+    .vl-53 {
+        margin-top: -50px;
+        margin-left: 82px;
+        height: 50px;
+    }
+    .vl-53 span.dots {
+        top: 48px;
+        left: -2px;
+    }
+    .vl-30 {
+        margin-top: -15px;
+        height: 50px;
+        margin-left: 34px;
+    }
+    .vl-30 span.dots {
+        top: 47px;
+        left: -2px;
+    }
+    .vl-30 span.dots:nth-child(2) {
+        margin-top: -52px;
+        margin-left: 0px;
+    }
+    .vl-31 {
+        margin-top: -72px;
+        height: 50px;
+        margin-left: 70px;
+    }
+    .vl-31 span.dots {
+        top: 48px;
+        height: 7px;
+        margin-left: -2px;
+    }
+    .vl-32 {
+        margin-top: -50px;
+        margin-left: -4px;
+        height: 50px;
+    }
+    .vl-33 {
+        margin-top: -93px;
+        margin-left: -6px;
+        height: 50px;
+    }
+    .vl-34 {
+        margin-top: -145px;
+        height: 50px;
+        margin-left: 36px;
+    }
+    .vl-34 span.dots {
+        top: 47px;
+        left: -1px;
+    }
+    .vl-35 {
+        margin-top: -30px;
+        height: 50px;
+        margin-left: 72px;
+    }
+    .vl-36 {
+        margin-top: -8px;
+        height: 50px;
+        margin-left: 71px;
+    }
+    .vl-37 {
+        margin-top: -31px;
+        height: 52px;
+        margin-left: 34px;
+    }
+    .vl-38 {
+        margin-top: -31px;
+        transform: rotate( 153deg);
+        height: 50px;
+        margin-left: 70px;
+    }
+    .vl-39 {
+        margin-top: -175px;
+        height: 50px;
+        margin-left: 73px;
+    }
+    .vl-40 {
+        margin-top: -101px;
+        height: 54px;
+        margin-left: 71px;
+    }
+    .vl-54 {
+        margin-top: -74px;
+        margin-left: 34px;
+        height: 50px;
+    }
+    .vl-55 {
+        margin-left: 71px;
+        margin-top: -26px;
+        height: 50px;
+        transform: rotate( 154deg);
+    }
+    .vl-56 {
+        margin-top: -99px;
+        margin-left: 71px;
+        height: 50px;
+        transform: rotate( 26deg);
+    }
+    .vl-57 {
+        margin-top: -120px;
+        height: 50px;
+        margin-left: 36px;
+    }
+    .vl-58 {
+        margin-top: -72px;
+        height: 50px;
+        margin-left: 75px;
+    }
+    .vl-59 {
+        margin-top: -52px;
+        margin-left: -3px;
+        height: 50px;
+    }
+    .vl-60 {
+        margin-top: -4px;
+        height: 50px;
+        margin-left: 71px;
+    }
+    .vl-40 span.dots {
+        top: 49px;
+        left: -2px;
+    }
+    .vl-41 {
+        margin-top: -74px;
+        height: 50px;
+        margin-left: 34px;
+    }
+    .vl-41 span.dots {
+        top: 49px;
+        left: -2px;
+    }
+    .vl-42 {
+        margin-top: -51px;
+        margin-left: 190px;
+        height: 50px;
+    }
+    .vl-42 span.dots {
+        top: 47px;
+        left: -2px;
+    }
+    .vl-43 {
+        margin-top: -25px;
+        height: 50px;
+        margin-left: 153px;
+    }
+    .vl-44 {
+        margin-top: -4px;
+        height: 50px;
+        margin-left: 150px;
+        transform: rotate( 156deg);
+    }
+    .vl-44 span.dots {
+        top: 47px;
+        left: -3px;
+    }
+    .vl-45 {
+        margin-top: -28px;
+        height: 50px;
+        margin-left: 184px;
+        transform: rotate( 90deg);
+    }
+    .vl-45 span.dots {
+        top: 49px;
+        left: 4px;
+    }
+    .vl-46 {
+        margin-top: -25px;
+        height: 50px;
+        margin-left: 149px;
+    }
+    .vl-47 {
+        margin-top: -7px;
+        height: 50px;
+        margin-left: 151px;
+    }
+    .vl-47 span.dots {
+        top: 50px;
+        left: -86px;
+    }
+    .vl-48 {
+        margin-top: -24px;
+        height: 50px;
+        margin-left: 190px;
+    }
+    .vl-48 span.dots {
+        top: 48px;
+        left: -3px;
+    }
+    .vl-49 {
+        margin-top: -29px;
+        height: 36px;
+        margin-left: 154px;
+        transform: rotate( 35deg);
+    }
+    .vl-49 span.dots {
+        top: 34px;
+        left: -2px;
+    }
+    .vl-61 {
+        margin-top: -196px;
+        transform: rotate( -90deg);
+        border-right: 3px solid #410883;
+        height: 50px;
+        margin-left: 112px;
+    }
+    .vl-62 {
+        margin-top: 34px;
+        transform: rotate( -91deg);
+        border-right: 3px solid #410883;
+        height: 56px;
+        margin-left: 109px;
+    }
+    .vl-63 {
+        margin-top: -210px;
+        transform: rotate( -153deg);
+        height: 50px;
+        margin-left: 73px;
+    }
+    .vl-63 span.dots {
+        top: 48px;
+        left: -2px;
+    }
+    .circ {
+        width: 109px;
+        height: 110px;
+    }
+    .circle-image {
+        height: 78px;
+        width: 78px;
+    }
+    .line-2 {
+        margin-top: -99px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 800px !important;
+    }
+    .carousel-control.right {
+        right: -3%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 700px !important;
+    }
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: unset;
+    }
+    .carousel-control {
+        left: -89px;
+        width: 10%;
+        text-shadow: none;
+    }
+    .carousel-control.right {
+        right: -12%;
+    }
+    .carousel-indicators {
+        bottom: -55%;
+        z-index: 0;
+    }
+    .carousel-control {
+        left: -96px;
+        width: 35%;
+    }
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: unset !important;
+    }
+    .comb-8 .inter-1 .member:nth-child(3) {
+        margin-top: -12px;
+        margin-left: 7px;
+    }
+    .comb-8 .inter-2 .member:nth-child(3) {
+        margin-top: 26px;
+        margin-left: 11px;
+    }
+    .comb-8 .inter-2 .member:nth-child(1) {
+        margin-top: 18px;
+    }
+    .comb-8 .inter-2 .member:nth-child(2) {
+        margin-top: -23px;
+    }
+    .comb-5 .member:nth-child(2) {
+        margin-top: 2px;
+        margin-left: -25px;
+    }
+    p {
+        margin-bottom: 100px;
+        font-size: 18px;
+    }
+    .people {
+        display: unset;
+        margin-top: 100px;
+    }
+    .team-1, .team-2 {
+        display: flex;
+        justify-content: center;
+    }
+    .circle-image {
+        height: 108px;
+        width: 108px;
+    }
+    .circ {
+        width: 139px;
+        height: 139px;
+        margin-top: -150px;
+        margin-left: -16px;
+    }
+    .circle-2 {
+        margin-top: 50px;
+        margin-left: -18px;
+    }
+    .circle {
+        margin-top: 523px;
+        margin-left: -155px;
+    }
+    .team-2 {
+        display: flex;
+        justify-content: center;
+        margin-top: -49px;
+    }
+    .line-2 {
+        margin-top: -128px;
+    }
+    .vl-34 {
+        margin-top: -144px;
+        height: 50px;
+        margin-left: 36px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 600px !important;
+    }
+    .carousel-control.right {
+        right: -10%;
+    }
+    .carousel-control {
+        left: -75px;
+        width: 35%;
+    }
+    p {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .modal-content {
+        width: 100%;
+    }
+}
+
+h1 {
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+}
+
+h3 {
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 500px !important;
+    }
+    .carousel-control {
+        left: -50px;
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 300px !important;
+    }
+    .carousel-control {
+        left: -49px;
+        width: 35%;
+    }
+    .carousel-control.right {
+        right: -2%;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .member {
+        width: 70px;
+        height: 65px;
+    }
+    .circle {
+        margin-top: 484px;
+        margin-left: -79px;
+    }
+    .team-2 {
+        margin-top: -58px;
+    }
+    .comb-1 .member:nth-child(1) {
+        margin-left: 8px;
+    }
+    .comb-1 .member:nth-child(2) {
+        margin-top: -28px;
+        margin-left: 12px;
+    }
+    .comb-2 .member:nth-child(1) {
+        margin-top: 8px;
+    }
+    .comb-2 .member:nth-child(2) {
+        margin-top: 12px;
+    }
+    .comb-2 .member:nth-child(3) {
+        margin-top: 14px;
+    }
+    .comb-3 {
+        margin-top: -118px;
+        margin-left: 14px;
+    }
+    .comb-3 .member:nth-child(1) {
+        margin-top: 84px;
+        margin-left: -21px;
+    }
+    .comb-3 .member:nth-child(2) {
+        margin-top: 20px;
+        margin-left: -20px;
+    }
+    .comb-3 .member:nth-child(3) {
+        margin-left: -19px;
+        margin-top: 11px;
+    }
+    .comb-4 .member:nth-child(1) {
+        margin-left: -21px;
+        margin-top: 7px;
+    }
+    .comb-4 .member:nth-child(2) {
+        margin-left: -21px;
+        margin-top: 16px;
+    }
+    .comb-5 .member:nth-child(1) {
+        margin-top: -25px;
+        margin-left: -4px;
+    }
+    .comb-5 .member:nth-child(2) {
+        margin-top: 17px;
+        margin-left: -27px;
+    }
+    .comb-6 .member:nth-child(1) {
+        margin-top: -11px;
+        margin-left: 21px;
+    }
+    .comb-6 .member:nth-child(2) {
+        margin-top: 13px;
+        margin-left: 21px;
+    }
+    .comb-6 .member:nth-child(3) {
+        margin-top: 24px;
+        margin-left: 22px;
+    }
+    .comb-7 .member:nth-child(3) {
+        margin-top: 14px;
+        margin-left: 0px;
+    }
+    .comb-7 .member:nth-child(1) {
+        margin-top: -54px;
+        margin-left: 0px;
+    }
+    .comb-8 .outer .member {
+        margin-top: 4px;
+    }
+    .comb-8 .inter-1 .member:nth-child(2) {
+        margin-top: -58px;
+    }
+    .comb-8 .inter-1 .member:nth-child(1) {
+        margin-top: -16px;
+        margin-left: -5px;
+    }
+    .comb-8 .inter-2 .member:nth-child(1) {
+        margin-top: 8px;
+        margin-left: -3px;
+    }
+    .comb-8 .inter-1 .member:nth-child(3) {
+        margin-top: -12px;
+        margin-left: 2px;
+    }
+    .comb-8 .inter-2 .member:nth-child(2) {
+        margin-top: -32px;
+        margin-left: 7px;
+    }
+    .comb-8 .inter-3 .member:nth-child(1) {
+        margin-top: -35px;
+        margin-left: -4px;
+    }
+    .comb-8 .inter-2 .member:nth-child(3) {
+        margin-top: 15px;
+        margin-left: 2px;
+    }
+    .vl {
+        margin-top: 29px;
+        height: 40px;
+        margin-left: 79px;
+    }
+    .vl-3 {
+        height: 49px;
+        margin-left: 11px;
+        margin-top: -57px;
+    }
+    .vl-4 {
+        margin-top: -63px;
+        margin-left: 78px;
+        width: 10px;
+        height: 38px;
+    }
+    .vl-5 {
+        margin-top: -60px;
+        height: 40px;
+        margin-left: 47px;
+        width: 10px;
+    }
+    .vl-6 {
+        margin-top: -55px;
+        margin-left: 79px;
+        width: 10px;
+        height: 40px;
+    }
+    .vl-7 {
+        margin-top: -168px;
+        height: 42px;
+        margin-left: 27px;
+    }
+    .vl-8 {
+        margin-top: -62px;
+        height: 43px;
+        margin-left: 63px;
+        transform: rotate( 22deg);
+    }
+    .vl-9 {
+        margin-top: -3px;
+        height: 37px;
+        margin-left: 63px;
+    }
+    .vl-10 {
+        margin-top: -4px;
+        height: 42px;
+        margin-left: 62px;
+        transform: rotate( 204deg);
+    }
+    .vl-11 {
+        margin-top: -21px;
+        height: 45px;
+        margin-left: 31px;
+    }
+    .vl-12 {
+        margin-top: -68px;
+        height: 48px;
+        margin-left: -4px;
+        transform: rotate( 338deg);
+    }
+    .vl-13 {
+        margin-top: -6px;
+        height: 40px;
+        margin-left: 62px;
+    }
+    .vl-14 {
+        margin-top: -2px;
+        height: 41px;
+        margin-left: 65px;
+    }
+    .vl-15 {
+        margin-top: -177px;
+        height: 54px;
+        margin-left: 12px;
+    }
+    .vl-16 {
+        margin-top: -28px;
+        height: 42px;
+        margin-left: 46px;
+    }
+    .vl-17 {
+        margin-top: -5px;
+        height: 43px;
+        margin-left: 47px;
+    }
+    .vl-18 {
+        height: 50px;
+        margin-top: -28px;
+        margin-left: 13px;
+    }
+    .vl-19 {
+        margin-top: -28px;
+        height: 46px;
+        margin-left: 46px;
+    }
+    .vl-20 {
+        margin-top: -6px;
+        height: 42px;
+        margin-left: 46px;
+        transform: rotate( 204deg);
+    }
+    .vl-21 {
+        margin-top: -24px;
+        height: 48px;
+        margin-left: 11px;
+    }
+    .vl-22 {
+        margin-top: -184px;
+        height: 53px;
+        margin-left: 9px;
+    }
+    .vl-22 span.dots {
+        top: 70px;
+        left: 40px;
+    }
+    .vl-23 {
+        margin-top: -30px;
+        height: 46px;
+        margin-left: 46px;
+    }
+    .vl-24 {
+        margin-top: -7px;
+        height: 40px;
+        margin-left: 47px;
+    }
+    .vl-25 {
+        margin-top: -119px;
+        height: 44px;
+        margin-left: 46px;
+    }
+    .vl-25 span.dots {
+        top: -30px;
+        left: -37px;
+    }
+    .vl-26 {
+        margin-top: 10px;
+        height: 56px;
+        margin-left: 84px;
+    }
+    .vl-27 {
+        margin-top: -160px;
+        height: 38px;
+        margin-left: 20px;
+    }
+    .vl-28 {
+        margin-top: -60px;
+        height: 45px;
+        margin-left: 52px;
+    }
+    .vl-29 {
+        margin-top: -27px;
+        height: 44px;
+        margin-left: 86px;
+    }
+    .vl-30 {
+        margin-top: -13px;
+        height: 43px;
+        margin-left: 29px;
+    }
+    .vl-31 {
+        margin-top: -66px;
+        height: 47px;
+        margin-left: 66px;
+        transform: rotate( 205deg);
+    }
+    .vl-32 {
+        margin-top: -45px;
+        margin-left: -5px;
+        height: 44px;
+    }
+    .vl-33 {
+        margin-top: -79px;
+        margin-left: -5px;
+        height: 43px;
+    }
+    .vl-34 {
+        margin-top: -138px;
+        height: 54px;
+        margin-left: 27px;
+    }
+    .vl-35 {
+        margin-top: -30px;
+        height: 53px;
+        margin-left: 66px;
+    }
+    .vl-36 {
+        margin-top: -8px;
+        height: 48px;
+        margin-left: 65px;
+    }
+    .vl-37 {
+        margin-top: -30px;
+        height: 52px;
+        margin-left: 29px;
+    }
+    .vl-38 {
+        margin-top: -32px;
+        transform: rotate( 145deg);
+        height: 47px;
+        margin-left: 68px;
+    }
+    .vl-39 {
+        margin-top: -166px;
+        height: 43px;
+        margin-left: 64px;
+    }
+    .vl-40 {
+        margin-top: -87px;
+        height: 47px;
+        margin-left: 66px;
+        transform: rotate( 160deg);
+    }
+    .vl-41 {
+        margin-top: -76px;
+        height: 59px;
+        margin-left: 30px;
+    }
+    .vl-42 {
+        margin-top: -48px;
+        margin-left: 177px;
+        height: 46px;
+    }
+    .vl-43 {
+        margin-top: -22px;
+        height: 41px;
+        margin-left: 142px;
+    }
+    .vl-44 {
+        margin-top: -5px;
+        height: 45px;
+        margin-left: 141px;
+    }
+    .vl-45 {
+        margin-top: -23px;
+        height: 43px;
+        margin-left: 173px;
+    }
+    .vl-46 {
+        margin-top: -19px;
+        height: 34px;
+        margin-left: 144px;
+    }
+    .vl-47 {
+        margin-top: -1px;
+        height: 49px;
+        margin-left: 146px;
+        transform: rotate( 155deg);
+    }
+    .vl-48 {
+        margin-top: -28px;
+        height: 53px;
+        margin-left: 181px;
+    }
+    .vl-49 {
+        margin-top: -30px;
+        height: 42px;
+        margin-left: 143px;
+    }
+    .vl-52 {
+        margin-top: -89px;
+        margin-left: 18px;
+        transform: rotate( 154deg);
+        height: 50px;
+    }
+    .vl-53 {
+        margin-top: -50px;
+        margin-left: 89px;
+        height: 50px;
+    }
+    .vl-54 {
+        margin-top: -70px;
+        margin-left: 28px;
+        height: 50px;
+    }
+    .vl-55 {
+        margin-left: 67px;
+        margin-top: -28px;
+        height: 44px;
+        transform: rotate( 154deg);
+    }
+    .vl-56 {
+        margin-top: -85px;
+        margin-left: 68px;
+        height: 43px;
+        transform: rotate( 26deg);
+    }
+    .vl-57 {
+        margin-top: -110px;
+        height: 50px;
+        margin-left: 36px;
+    }
+    .vl-60 {
+        margin-top: 0px;
+        height: 45px;
+        margin-left: 71px;
+        transform: rotate( -19deg);
+    }
+    .vl-61 {
+        margin-top: -191px;
+        transform: rotate( -90deg);
+        border-right: 3px solid #410883;
+        height: 61px;
+        margin-left: 101px;
+    }
+    .vl-62 {
+        margin-top: 19px;
+        transform: rotate( -91deg);
+        border-right: 3px solid #410883;
+        height: 56px;
+        margin-left: 107px;
+    }
+    .vl-63 {
+        margin-top: -198px;
+        transform: rotate( -149deg);
+        height: 50px;
+        margin-left: 71px;
+    }
+    .vl-3 span.dots:nth-child(1) {
+        margin-top: -3px;
+        margin-left: 65px;
+    }
+    .vl-3 span.dots:nth-child(2) {
+        margin-top: 46px;
+        margin-left: 66px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-9 span.dots {
+        top: -2px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-15 span.dots {
+        top: 49px;
+        left: -3px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-25 span.dots {
+        top: 40px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-27 span.dots {
+        top: -4px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-28 span.dots {
+        top: 45px;
+        left: -2px;
+    }
+    .vl-30 span.dots {
+        top: 42px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-30 span.dots:nth-child(2) {
+        margin-top: -47px;
+        margin-left: 1px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-31 span.dots {
+        top: 3px;
+        left: 81px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-32 span.dots {
+        top: 131px;
+        left: 2px;
+    }
+    .vl-33 span.dots {
+        top: 42px;
+        left: -2px;
+    }
+    .vl-34 span.dots {
+        top: -2px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-40 span.dots {
+        top: 44px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-41 span.dots {
+        top: 53px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-42 span.dots {
+        top: 42px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-43 span.dots {
+        top: 40px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-44 span.dots {
+        top: 38px;
+        left: -3px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-45 span.dots {
+        top: 42px;
+        left: 4px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-46 span.dots {
+        top: 33px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-47 span.dots {
+        top: 49px;
+        left: -74px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-48 span.dots {
+        top: 43px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-49 span.dots {
+        top: 37px;
+        left: -2px;
+        width: 7px;
+        height: 7px;
+    }
+    .vl-55 span.dots {
+        top: 42px;
+        left: -1px;
+    }
+    .line-2 {
+        margin-top: -108px;
+    }
+    .circle-image {
+        height: 88px;
+        width: 88px;
+    }
+    .circ {
+        width: 119px;
+        height: 119px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .circle {
+        margin-top: 530px;
+        margin-left: -125px;
+    }
+    .carousel-control.left, .carousel-control.right {
+        display: none;
+    }
+    .comb-5 .member:nth-child(2) {
+        margin-top: 32px;
+        margin-left: -116px;
+    }
+    .comb-6 {
+        margin-top: -114px;
+        margin-left: -34px;
+    }
+    .comb-7 {
+        margin-top: -130px;
+        margin-right: 85px;
+    }
+    .comb-8 {
+        margin-left: -158px;
+        margin-top: 75px;
+    }
+}
